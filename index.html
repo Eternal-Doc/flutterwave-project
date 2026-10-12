@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Website</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+
+            <div class="flex items-center justify-between">
+
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-bold text-orange-500">
+                    Flutterwave
+                </a>
+
+                <!-- Navigation -->
+                <div class="hidden md:flex items-center gap-8">
+
+                    <!-- Enterprise -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 text-gray-700 hover:text-orange-500">
+                            Enterprise
+                            <span>⌄</span>
+                        </button>
+
+                        <div class="absolute left-0 top-full hidden group-hover:block w-56 bg-white shadow-lg rounded-lg p-4 z-50">
+                            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">
+                                Online Checkout
+                            </a>
+
+                            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">
+                                Accept Payments
+                            </a>
+
+                            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">
+                                Transfers
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- SME -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 text-gray-700 hover:text-orange-500">
+                            SME
+                            <span>⌄</span>
+                        </button>
+
+                        <div class="absolute left-0 top-full hidden group-hover:block w-56 bg-white shadow-lg rounded-lg p-4 z-50">
+                            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">
+                                Store
+                            </a>
+
+                            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">
+                                Invoices
+                            </a>
+
+                            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">
+                                Payment Links
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Personal -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 text-gray-700 hover:text-orange-500">
+                            Personal
+                            <span>⌄</span>
+                        </button>
+
+                        <div class="absolute left-0 top-full hidden group-hover:block w-56 bg-white shadow-lg rounded-lg p-4 z-50">
+                            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">
+                                Send Money
+                            </a>
+
+                            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">
+                                Shop Online
+                            </a>
+
+                            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">
+                                Events
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Buttons -->
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="#" class="text-gray-700 hover:text-orange-500">
+                        Log in
+                    </a>
+
+                    <a href="#" class="bg-orange-500 text-white px-5 py-3 rounded-lg hover:bg-orange-600">
+                        Get Started
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="bg-orange-50">
+        <div class="max-w-7xl mx-auto px-6 py-20">
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                <!-- Hero Text -->
+                <div>
+                    <p class="text-orange-500 font-semibold mb-4">
+                        Payments made simple
+                    </p>
+
+                    <h1 class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+                        The easiest way to
+                        <span class="text-orange-500">pay and get paid.</span>
+                    </h1>
+
+                    <p class="text-lg text-gray-600 mt-6 max-w-xl">
+                        Make and receive payments easily, securely and conveniently.
+                    </p>
+
+                    <div class="flex gap-4 mt-8">
+                        <a href="#"
+                           class="bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600">
+                            Get Started
+                        </a>
+
+                        <a href="#"
+                           class="border border-gray-300 px-6 py-3 rounded-lg font-semibold text-gray-700 hover:bg-white">
+                            Contact Sales
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Visual -->
+                <div class="flex justify-center">
+                    <div class="w-full max-w-md bg-white rounded-3xl shadow-xl p-8">
+                        <div class="flex justify-between items-center mb-8">
+                            <span class="font-bold text-xl">Payment</span>
+                            <span class="text-green-500">●</span>
+                        </div>
+
+                        <div class="bg-gray-100 rounded-xl p-6">
+                            <p class="text-sm text-gray-500">
+                                Total amount
+                            </p>
+
+                            <p class="text-4xl font-bold mt-2">
+                                ₦250,000
+                            </p>
+                        </div>
+
+                        <button class="w-full bg-orange-500 text-white py-4 rounded-xl mt-6 font-semibold">
+                            Pay Now
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= TRUSTED BUSINESSES ================= -->
+          
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+
+            <p class="text-gray-500 mb-8">
+                Trusted by businesses across Africa and beyond
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+
+                <div class="text-2xl font-bold text-gray-400">
+                    Business 1
+                </div>
+
+                <div class="text-2xl font-bold text-gray-400">
+                    Business 2
+                </div>
+
+                <div class="text-2xl font-bold text-gray-400">
+                    Business 3
+                </div>
+
+                <div class="text-2xl font-bold text-gray-400">
+                    Business 4
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+</html>
