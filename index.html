@@ -1,210 +1,302 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Website</title>
+    <title>Flutterwave Inspired Website</title>
 
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-white">
+<body class="bg-white text-black">
 
-    <!-- ================= NAVBAR ================= -->
-    <nav class="bg-white border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-6 py-4">
-
-            <div class="flex items-center justify-between">
-
-                <!-- Logo -->
-                <a href="#" class="text-2xl font-bold text-orange-500">
-                    Flutterwave
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="bg-[#252d55] text-white px-4 py-3">
+        <div class="max-w-7xl mx-auto flex items-center justify-center gap-3">
+            <p class="text-xs sm:text-sm text-center">
+                🚀 Welcome to our payment platform. Endless possibilities await you!
+                <a href="#" class="font-semibold hover:underline">
+                    Learn more →
                 </a>
+            </p>
+        </div>
+    </div>
 
-                <!-- Navigation -->
-                <div class="hidden md:flex items-center gap-8">
+    <!-- NAVBAR -->
+    <nav class="bg-white px-6 py-6">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
 
-                    <!-- Enterprise -->
-                    <div class="relative group">
-                        <button class="flex items-center gap-1 text-gray-700 hover:text-orange-500">
-                            Enterprise
-                            <span>⌄</span>
-                        </button>
+            <!-- LOGO -->
+            <a href="#" class="flex items-center gap-2">
+                <span class="text-3xl">🌈</span>
+                <span class="text-2xl font-bold text-[#252d55]">
+                    flutterwave
+                </span>
+            </a>
 
-                        <div class="absolute left-0 top-full hidden group-hover:block w-56 bg-white shadow-lg rounded-lg p-4 z-50">
-                            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">
-                                Online Checkout
-                            </a>
+            <!-- NAVIGATION LINKS -->
+            
+<div class="hidden lg:flex items-center gap-9">
 
-                            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">
-                                Accept Payments
-                            </a>
+    <!-- ENTERPRISE DROPDOWN -->
+    <div class="relative group">
+        <button class="py-3 text-sm hover:text-orange-500">
+            Enterprise <span>⌄</span>
+        </button>
+        <div class="absolute left-0 top-full hidden group-hover:block
+                    bg-white shadow-xl rounded-lg w-56 p-3 z-50">
+            <a href="#" class="block p-3 rounded hover:bg-gray-100">Accept Payments</a>
+            <a href="#" class="block p-3 rounded hover:bg-gray-100">Online Checkout</a>
+            <a href="#" class="block p-3 rounded hover:bg-gray-100">Transfers (Payout)</a>
+        </div>
+    </div>
 
-                            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">
-                                Transfers
-                            </a>
-                        </div>
-                    </div>
+    <!-- SME DROPDOWN -->
+    <div class="relative group">
+        <button class="py-3 text-sm hover:text-orange-500">
+            SME <span>⌄</span>
+        </button>
+        <div class="absolute left-0 top-full hidden group-hover:block
+                    bg-white shadow-xl rounded-lg w-56 p-3 z-50">
+            <a href="#" class="block p-3 rounded hover:bg-gray-100">Payment Links</a>
+            <a href="#" class="block p-3 rounded hover:bg-gray-100">Online Store</a>
+            <a href="#" class="block p-3 rounded hover:bg-gray-100">Invoices</a>
+        </div>
+    </div>
 
-                    <!-- SME -->
-                    <div class="relative group">
-                        <button class="flex items-center gap-1 text-gray-700 hover:text-orange-500">
-                            SME
-                            <span>⌄</span>
-                        </button>
+    <!-- PERSONAL DROPDOWN -->
+    <div class="relative group">
+        <button class="py-3 text-sm hover:text-orange-500">
+            Personal <span>⌄</span>
+        </button>
+        <div class="absolute left-0 top-full hidden group-hover:block
+                    bg-white shadow-xl rounded-lg w-56 p-3 z-50">
+            <a href="#" class="block p-3 rounded hover:bg-gray-100">Send Money</a>
+            <a href="#" class="block p-3 rounded hover:bg-gray-100">Pay Online</a>
+        </div>
+    </div>
 
-                        <div class="absolute left-0 top-full hidden group-hover:block w-56 bg-white shadow-lg rounded-lg p-4 z-50">
-                            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">
-                                Store
-                            </a>
+    <!-- RESOURCES DROPDOWN -->
+    <div class="relative group">
+        <button class="py-3 text-sm hover:text-orange-500">
+            Resources <span>⌄</span>
+        </button>
+        <div class="absolute left-0 top-full hidden group-hover:block
+                    bg-white shadow-xl rounded-lg w-56 p-3 z-50">
+            <a href="#" class="block p-3 rounded hover:bg-gray-100">Blog</a>
+            <a href="#" class="block p-3 rounded hover:bg-gray-100">Help Center</a>
+        </div>
+    </div>
 
-                            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">
-                                Invoices
-                            </a>
+    <!-- DEVELOPERS DROPDOWN -->
+    <div class="relative group">
+        <button class="py-3 text-sm hover:text-orange-500">
+            Developers <span>⌄</span>
+        </button>
+        <div class="absolute left-0 top-full hidden group-hover:block
+                    bg-white shadow-xl rounded-lg w-56 p-3 z-50">
+            <a href="#" class="block p-3 rounded hover:bg-gray-100">API Documentation</a>
+            <a href="#" class="block p-3 rounded hover:bg-gray-100">Developer Tools</a>
+        </div>
+    </div>
 
-                            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">
-                                Payment Links
-                            </a>
-                        </div>
-                    </div>
+    <!-- COMPANY DROPDOWN -->
+    <div class="relative group">
+        <button class="py-3 text-sm hover:text-orange-500">
+            Company <span>⌄</span>
+        </button>
+        <div class="absolute right-0 top-full hidden group-hover:block
+                    bg-white shadow-xl rounded-lg w-56 p-3 z-50">
+            <a href="#" class="block p-3 rounded hover:bg-gray-100">About Us</a>
+            <a href="#" class="block p-3 rounded hover:bg-gray-100">Careers</a>
+            <a href="#" class="block p-3 rounded hover:bg-gray-100">Contact Us</a>
+        </div>
+    </div>
 
-                    <!-- Personal -->
-                    <div class="relative group">
-                        <button class="flex items-center gap-1 text-gray-700 hover:text-orange-500">
-                            Personal
-                            <span>⌄</span>
-                        </button>
+</div>
 
-                        <div class="absolute left-0 top-full hidden group-hover:block w-56 bg-white shadow-lg rounded-lg p-4 z-50">
-                            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">
-                                Send Money
-                            </a>
+            <!-- SIGN IN BUTTON -->
+            <a href="#"
+               class="hidden sm:inline-block bg-gray-100 hover:bg-gray-200 px-10 py-4 rounded-xl text-sm font-medium">
+                Sign in
+            </a>
 
-                            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">
-                                Shop Online
-                            </a>
-
-                            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">
-                                Events
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Buttons -->
-                <div class="hidden md:flex items-center gap-4">
-                    <a href="#" class="text-gray-700 hover:text-orange-500">
-                        Log in
-                    </a>
-
-                    <a href="#" class="bg-orange-500 text-white px-5 py-3 rounded-lg hover:bg-orange-600">
-                        Get Started
-                    </a>
-                </div>
-
-            </div>
         </div>
     </nav>
 
+    <!-- HERO SECTION -->
+    <section class="px-6 pt-16 pb-20">
+        <div class="max-w-7xl mx-auto">
 
-    <!-- ================= HERO SECTION ================= -->
+            <div class="max-w-2xl">
 
-    <section class="bg-orange-50">
-        <div class="max-w-7xl mx-auto px-6 py-20">
+                <!-- MAIN HEADING -->
+                <h1 class="text-6xl sm:text-7xl md:text-8xl font-extrabold leading-[0.95] tracking-tight">
 
-            <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <span class="block text-orange-400">
+                        Endless
+                    </span>
 
-                <!-- Hero Text -->
-                <div>
-                    <p class="text-orange-500 font-semibold mb-4">
-                        Payments made simple
-                    </p>
+                    <span class="block text-orange-400">
+                        possibilities
+                    </span>
 
-                    <h1 class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-                        The easiest way to
-                        <span class="text-orange-500">pay and get paid.</span>
-                    </h1>
+                    <span class="block text-black">
+                        for all
+                    </span>
 
-                    <p class="text-lg text-gray-600 mt-6 max-w-xl">
-                        Make and receive payments easily, securely and conveniently.
-                    </p>
+                </h1>
 
-                    <div class="flex gap-4 mt-8">
-                        <a href="#"
-                           class="bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600">
-                            Get Started
-                        </a>
+                <!-- DESCRIPTION -->
+                <p class="text-lg sm:text-xl leading-relaxed text-gray-800 mt-10 max-w-xl">
+                    Empowering businesses of all sizes with seamless payment
+                    solutions tailored for enterprises, startups, and emerging
+                    businesses.
+                </p>
 
-                        <a href="#"
-                           class="border border-gray-300 px-6 py-3 rounded-lg font-semibold text-gray-700 hover:bg-white">
-                            Contact Sales
-                        </a>
-                    </div>
+                <!-- BUTTONS -->
+                <div class="flex flex-wrap gap-4 mt-8">
+
+                    <a href="#"
+                       class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-7 py-4 rounded-lg">
+                        Get Started
+                    </a>
+
+                    <a href="#"
+                       class="border border-gray-300 hover:bg-gray-100 font-semibold px-7 py-4 rounded-lg">
+                        Contact Sales
+                    </a>
+
                 </div>
+                
 
-                <!-- Hero Visual -->
-                <div class="flex justify-center">
-                    <div class="w-full max-w-md bg-white rounded-3xl shadow-xl p-8">
-                        <div class="flex justify-between items-center mb-8">
-                            <span class="font-bold text-xl">Payment</span>
-                            <span class="text-green-500">●</span>
-                        </div>
-
-                        <div class="bg-gray-100 rounded-xl p-6">
-                            <p class="text-sm text-gray-500">
-                                Total amount
-                            </p>
-
-                            <p class="text-4xl font-bold mt-2">
-                                ₦250,000
-                            </p>
-                        </div>
-
-                        <button class="w-full bg-orange-500 text-white py-4 rounded-xl mt-6 font-semibold">
-                            Pay Now
-                        </button>
-                    </div>
-                </div>
+</div>
 
             </div>
 
         </div>
     </section>
+<section class="w-full"> 
+       <div class="mt-12 grid grid-cols-1 md:grid-cols-5 gap-6">
 
+<!-- Left: wide image -->
+<div class="md:col-span-3 relative rounded-2xl overflow-hidden h-[420px]">
+<img src="img/image.png" alt="SweetPOD" class="w-full h-full object-cover">
+<span class="absolute bottom-3 left-4 text-white font-semibold"> SweetPOD</span>
+</div>
 
-    <!-- ================= TRUSTED BUSINESSES ================= -->
-          
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-6 text-center">
+<!-- Right: image on top, text below -->
+<div class="md:col-span-2 flex flex-col gap-4">
+<div class="relative rounded-2xl overflow-hidden h-[420px]">
+<img src="img/e25_dresses.jpg"  class="w-full h-full object-cover">
+<span class="absolute bottom-3 left-4 text-white font-semibold">e25_dresses</span>
+</div>
+<p class="text-gray-500 text-sm leading-relaxed">
+Send money home to loved ones, sell online as a small business,
+process global payments as an enterprise, build financial products as a startup. With Flutterwave, the question isn't what's possible—it is: what isn't?
+</p>
+</div>
+</section>
+```html
+<!-- TRUSTED BUSINESSES SECTION -->
+<section class="px-6 py-16 bg-white">
+    <div class="max-w-7xl mx-auto">
 
-            <p class="text-gray-500 mb-8">
-                Trusted by businesses across Africa and beyond
-            </p>
+        <!-- HEADING -->
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">
+            We are trusted by leading businesses across different sectors
+        </h2>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+        <!-- COMPANY LOGOS -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-8 items-center justify-items-center">
 
-                <div class="text-2xl font-bold text-gray-400">
-                    Business 1
-                </div>
+            <img src="https://flutterwave.com/images/company/uber.svg"
+                 alt="Uber logo" class="w-24 h-12 object-contain">
 
-                <div class="text-2xl font-bold text-gray-400">
-                    Business 2
-                </div>
+            <img src="https://flutterwave.com/images/company/mtn.svg"
+                 alt="MTN logo" class="w-24 h-12 object-contain">
 
-                <div class="text-2xl font-bold text-gray-400">
-                    Business 3
-                </div>
+            <img src="https://flutterwave.com/images/company/chipper.svg"
+                 alt="Chipper logo" class="w-24 h-12 object-contain">
 
-                <div class="text-2xl font-bold text-gray-400">
-                    Business 4
-                </div>
+            <img src="https://flutterwave.com/images/company/piggyvest.svg"
+                 alt="PiggyVest logo" class="w-24 h-12 object-contain">
 
-            </div>
+            <img src="https://flutterwave.com/images/company/wise.svg"
+                 alt="Wise logo" class="w-24 h-12 object-contain">
+
+            <img src="https://flutterwave.com/images/company/microsoft.svg"
+                 alt="Microsoft logo" class="w-24 h-12 object-contain">
+
+            <img src="https://flutterwave.com/images/company/air-peace.svg"
+                 alt="Air Peace logo" class="w-24 h-12 object-contain">
 
         </div>
-    </section>
 
+    </div>
+</section>
+<h2 class="text-4xl sm:text-6xl font-extrabold max-w-3xl leading-tight">
+  Endless payment possibilities
+  <span class="text-orange-500">for enterprises</span>
+</h2>
 
+<div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+
+  <!-- Left: Online Checkout -->
+  <div>
+    <h3 class="text-lg font-semibold">Online Checkout</h3>
+    <p class="mt-4 text-gray-600 leading-relaxed">
+      Our online checkout features our smart payment ordering system,
+      incredible speed, and beautiful simplicity. It's designed to grow
+      your revenue and provide the best payment experience to your customers.
+    </p>
+    <a href="#" class="inline-block mt-6 bg-[#252d55] text-white text-sm font-semibold px-5 py-3 rounded-md hover:opacity-90">
+      Get started
+    </a>
+  </div>
+
+  <!-- Center: payment card mockup -->
+  <div class="mx-auto w-full max-w-xs bg-white rounded-3xl shadow-2xl p-6 border border-gray-100">
+    <div class="flex justify-between items-start">
+      <span class="text-2xl text-[#252d55]">&infin;</span>
+      <div class="text-right">
+        <p class="text-sm font-semibold">NGN 2,560.68</p>
+        <p class="text-xs text-gray-400">felix@example.com</p>
+      </div>
+    </div>
+
+    <h4 class="mt-10 font-bold text-lg">How would you like to pay?</h4>
+
+    <ul class="mt-6 space-y-3 text-sm text-gray-600">
+      <li class="flex items-center gap-3 p-3 rounded-lg bg-gray-50">💳 Card</li>
+      <li class="flex items-center gap-3 p-3 rounded-lg bg-gray-50"># USSD</li>
+      <li class="flex items-center gap-3 p-3 rounded-lg bg-gray-50">🏦 Bank</li>
+      <li class="flex items-center gap-3 p-3 rounded-lg bg-gray-50">▦ QR</li>
+    </ul>
+  </div>
+
+  <!-- Right: Accept payments + Transfers -->
+  <div class="space-y-12">
+    <div>
+      <h3 class="text-lg font-semibold">Accept payments</h3>
+      <p class="mt-3 text-gray-600 leading-relaxed">
+        Easily receive money from anyone, anywhere in the world via our
+        multitude of secure payment methods.
+      </p>
+      <a href="#" class="inline-block mt-4 text-orange-500 font-semibold text-sm hover:underline">Learn more ›</a>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold">Transfers (Payout)</h3>
+      <p class="mt-3 text-gray-600 leading-relaxed">
+        Make single or bulk transfers to bank accounts from your dashboard.
+      </p>
+      <a href="#" class="inline-block mt-4 text-orange-500 font-semibold text-sm hover:underline">Learn more ›</a>
+    </div>
+  </div>
+
+</div>
 </body>
 </html>
